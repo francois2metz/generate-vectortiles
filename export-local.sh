@@ -14,7 +14,7 @@ readonly TILE_TIMEOUT=${TILE_TIMEOUT:-1800000}
 readonly MBTILES_NAME=${MBTILES_NAME:-tiles.mbtiles}
 
 function export_local_mbtiles() {
-    exec tilelive-copy \
+    exec npx tilelive-copy \
         --scheme=pyramid \
         --bounds="$BBOX" \
         --timeout="$TILE_TIMEOUT" \
